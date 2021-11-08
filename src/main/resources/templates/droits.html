@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <title>Droits aux allocations</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+  <style>
+    /* Modify the background color */
+    .btn-custom {
+      background-color: teal;
+      font-weight: bold;
+      color: white;
+    }
+
+    .btn-custom-outline {
+      outline-color: teal;
+      border-color: teal;;
+      color: teal;
+      height: 28px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  </style>
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-dark">
+  <div class="d-flex flex-row ms-2">
+    <div class="col me-3" style="height: 80px">
+      <a class="navbar-brand" href="#">
+        <img th:src="@{/logo.png}" alt="logo CAF" width="150" height="45">
+        <p class="fw-bold text-white">Caisse des Allocations Familiales</p>
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-light" th:href="@{/web}">Home</a>
+    </div>
+  </div>
+</nav>
+<body>
+<h2 class="ms-4 mt-2 mb-3
+      ">Déterminez quel parent a le droit aux allocations</h2>
+<!--<span class="text-danger ms-3 fw-bold" th:if="${error}=='versement'">Impossible de supprimer l'allocataire car il a des versements !</span>-->
+<form th:action="@{/web/droits/execute}" th:object="${sf}" method="POST">
+  <div class="form-group row ms-3 me-3">
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Activité lucrative :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 1</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="alp1" id="alp1t"
+               th:field="*{parent1ActiviteLucrative}"
+               th:value="true">
+        <label class="form-check-label" for="alp1t">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="alp1" id="alp1f"
+               th:field="*{parent1ActiviteLucrative}"
+               th:value="false">
+        <label class="form-check-label" for="alp1f">
+          Non
+        </label>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 2</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="alp2" id="alp2t"
+               th:field="*{parent2ActiviteLucrative}"
+               th:value="true">
+        <label class="form-check-label" for="alp2t">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="alp2" id="alp2f"
+               th:field="*{parent2ActiviteLucrative}"
+               th:value="false">
+        <label class="form-check-label" for="alp2f">
+          Non
+        </label>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Salarié :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 1</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sp1" id="sp1t"
+               th:field="*{parent1Salarie}"
+               th:value="true">
+        <label class="form-check-label" for="sp1t">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sp1" id="sp1f"
+               th:field="*{parent1Salarie}"
+               th:value="false">
+        <label class="form-check-label" for="sp1f">
+          Non
+        </label>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 2</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sp2" id="sp2t"
+               th:field="*{parent2Salarie}"
+               th:value="true">
+        <label class="form-check-label" for="sp2t">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sp2" id="sp2f"
+               th:field="*{parent2Salarie}"
+               th:value="false">
+        <label class="form-check-label" for="sp2f">
+          Non
+        </label>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Indépendant :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 1</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ip1" id="ip1t"
+               th:field="*{parent1Independant}"
+               th:value="true">
+        <label class="form-check-label" for="ip1t">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ip1" id="ip1f"
+               th:field="*{parent1Independant}"
+               th:value="false">
+        <label class="form-check-label" for="ip1f">
+          Non
+        </label>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 2</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ip2" id="ip2t"
+               th:field="*{parent2Independant}"
+               th:value="true">
+        <label class="form-check-label" for="ip2t">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ip2" id="ip2f"
+               th:field="*{parent2Independant}"
+               th:value="false">
+        <label class="form-check-label" for="ip2f">
+          Non
+        </label>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Autorité parentale :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 1</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="app1" id="app1t"
+               th:field="*{parent1AutoriteParentale}"
+               th:value="true">
+        <label class="form-check-label" for="app1t">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="app1" id="app1f"
+               th:field="*{parent1AutoriteParentale}"
+               th:value="false">
+        <label class="form-check-label" for="app1f">
+          Non
+        </label>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 2</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="app2" id="app2t"
+               th:field="*{parent2AutoriteParentale}"
+               th:value="true">
+        <label class="form-check-label" for="app2t">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="app2" id="app2f"
+               th:field="*{parent2AutoriteParentale}"
+               th:value="false">
+        <label class="form-check-label" for="app2f">
+          Non
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row ms-3 mt-4 me-3">
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Salaires :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 1</label>
+      <div class="form-group">
+        <label for="p1Salaire">Salaire</label>
+        <input type="text" class="form-control" id="p1Salaire" th:field="*{parent1Salaire}">
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 2</label>
+      <div class="form-group">
+        <label for="p2Salaire">Salaire</label>
+        <input type="text" class="form-control" id="p2Salaire" th:field="*{parent2Salaire}">
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Ménage commun :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label mb-3"></label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="mc" id="mct"
+               th:field="*{parentsEnsemble}"
+               th:value="true">
+        <label class="form-check-label" for="mct">
+          Oui
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="mc" id="mcf"
+               th:field="*{parentsEnsemble}"
+               th:value="false">
+        <label class="form-check-label" for="mcf">
+          Non
+        </label>
+      </div>
+    </div>
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Résidence de l'enfant :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label mb-3"></label>
+      <div class="form-group">
+        <label for="enfVille">Ville</label>
+        <input type="text" class="form-control" id="enfVille" th:field="*{enfantResidence}">
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label mb-3"></label>
+      <div class="form-group">
+        <label for="enfCanton">Canton</label>
+        <select id="enfCanton" class="form-control" th:field="*{enfantCantonResidence}">
+          <option th:value="''" th:text="Sélectionnez..."></option>
+          <option th:value="'AG'" th:text="AG"></option>
+          <option th:value="'AI'" th:text="AI"></option>
+          <option th:value="'AR'" th:text="AR"></option>
+          <option th:value="'BE'" th:text="BE"></option>
+          <option th:value="'BL'" th:text="BL"></option>
+          <option th:value="'BS'" th:text="BS"></option>
+          <option th:value="'FR'" th:text="FR"></option>
+          <option th:value="'GE'" th:text="${'GE'}"></option>
+          <option th:value="'GL'" th:text="GL"></option>
+          <option th:value="'GR'" th:text="GR"></option>
+          <option th:value="'JU'" th:text="JU"></option>
+          <option th:value="'LU'" th:text="LU"></option>
+          <option th:value="'NE'" th:text="${'NE'}"></option>
+          <option th:value="'NW'" th:text="NW"></option>
+          <option th:value="'OW'" th:text="OW"></option>
+          <option th:value="'SG'" th:text="SG"></option>
+          <option th:value="'SH'" th:text="SH"></option>
+          <option th:value="'SO'" th:text="SO"></option>
+          <option th:value="'SZ'" th:text="SZ"></option>
+          <option th:value="'TG'" th:text="TG"></option>
+          <option th:value="'TI'" th:text="TI"></option>
+          <option th:value="'UR'" th:text="UR"></option>
+          <option th:value="'VD'" th:text="VD"></option>
+          <option th:value="'VS'" th:text="VS"></option>
+          <option th:value="'ZG'" th:text="ZG"></option>
+          <option th:value="'ZH'" th:text="ZH"></option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Résidence des parents :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 1</label>
+      <div class="form-group">
+        <label for="p1Ville">Ville</label>
+        <input type="text" class="form-control" id="p1Ville" th:field="*{parent1Residence}">
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 2</label>
+      <div class="form-group">
+        <label for="p2Ville">Ville</label>
+        <input type="text" class="form-control" id="p2Ville" th:field="*{parent2Residence}">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row ms-3 mt-4">
+    <div class="col-sm">
+      <label class="col-form-label fw-bold">Canton de travail :</label>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 1</label>
+      <div class="form-group">
+        <label for="p1Canton">Canton</label>
+        <select id="p1Canton" class="form-control" th:field="*{parent1CantonTravail}">
+          <option th:value="''" th:text="Sélectionnez..."></option>
+          <option th:value="'AG'" th:text="AG"></option>
+          <option th:value="'AI'" th:text="AI"></option>
+          <option th:value="'AR'" th:text="AR"></option>
+          <option th:value="'BE'" th:text="BE"></option>
+          <option th:value="'BL'" th:text="BL"></option>
+          <option th:value="'BS'" th:text="BS"></option>
+          <option th:value="'FR'" th:text="FR"></option>
+          <option th:value="'GE'" th:text="${'GE'}"></option>
+          <option th:value="'GL'" th:text="GL"></option>
+          <option th:value="'GR'" th:text="GR"></option>
+          <option th:value="'JU'" th:text="JU"></option>
+          <option th:value="'LU'" th:text="LU"></option>
+          <option th:value="'NE'" th:text="${'NE'}"></option>
+          <option th:value="'NW'" th:text="NW"></option>
+          <option th:value="'OW'" th:text="OW"></option>
+          <option th:value="'SG'" th:text="SG"></option>
+          <option th:value="'SH'" th:text="SH"></option>
+          <option th:value="'SO'" th:text="SO"></option>
+          <option th:value="'SZ'" th:text="SZ"></option>
+          <option th:value="'TG'" th:text="TG"></option>
+          <option th:value="'TI'" th:text="TI"></option>
+          <option th:value="'UR'" th:text="UR"></option>
+          <option th:value="'VD'" th:text="VD"></option>
+          <option th:value="'VS'" th:text="VS"></option>
+          <option th:value="'ZG'" th:text="ZG"></option>
+          <option th:value="'ZH'" th:text="ZH"></option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm">
+      <label class="col-form-label">Parent 2</label>
+      <div class="form-group">
+        <label for="p2Canton">Canton</label>
+        <select id="p2Canton" class="form-control" th:field="*{parent2CantonTravail}">
+          <option th:value="''" th:text="Sélectionnez..."></option>
+          <option th:value="'AG'" th:text="AG"></option>
+          <option th:value="'AI'" th:text="AI"></option>
+          <option th:value="'AR'" th:text="AR"></option>
+          <option th:value="'BE'" th:text="BE"></option>
+          <option th:value="'BL'" th:text="BL"></option>
+          <option th:value="'BS'" th:text="BS"></option>
+          <option th:value="'FR'" th:text="FR"></option>
+          <option th:value="'GE'" th:text="${'GE'}"></option>
+          <option th:value="'GL'" th:text="GL"></option>
+          <option th:value="'GR'" th:text="GR"></option>
+          <option th:value="'JU'" th:text="JU"></option>
+          <option th:value="'LU'" th:text="LU"></option>
+          <option th:value="'NE'" th:text="${'NE'}"></option>
+          <option th:value="'NW'" th:text="NW"></option>
+          <option th:value="'OW'" th:text="OW"></option>
+          <option th:value="'SG'" th:text="SG"></option>
+          <option th:value="'SH'" th:text="SH"></option>
+          <option th:value="'SO'" th:text="SO"></option>
+          <option th:value="'SZ'" th:text="SZ"></option>
+          <option th:value="'TG'" th:text="TG"></option>
+          <option th:value="'TI'" th:text="TI"></option>
+          <option th:value="'UR'" th:text="UR"></option>
+          <option th:value="'VD'" th:text="VD"></option>
+          <option th:value="'VS'" th:text="VS"></option>
+          <option th:value="'ZG'" th:text="ZG"></option>
+          <option th:value="'ZH'" th:text="ZH"></option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-9">
+    </div>
+  </div>
+  <div class="form-group row ms-3 mt-5 me-3">
+    <div class="col-sm-1">
+      <button type="submit" class="btn btn-custom">Soumettre</button>
+    </div>
+  </div>
+</form>
+<div class="row ms-0 mt-4">
+  <div class="col-sm">
+    <span class="text-info ms-3 fw-bold" th:if="${result}=='parent1'">Le parent 1 a le droit aux allocations !</span>
+    <span class="text-info ms-3 fw-bold" th:if="${result}=='parent2'">Le parent 2 a le droit aux allocations !</span>
+    <span class="text-danger ms-3 fw-bold" th:if="${result}=='error'">Aucun parent n'a le droit aux allocations !</span>
+  </div>
+</div>
+</body>
+</html>

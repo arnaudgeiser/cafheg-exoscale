@@ -1,0 +1,9 @@
+spring:
+  # Templates reloading during development
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+  # Static resources reloading during development
+  web:
+    resources:
+      static-locations: classpath:/static/

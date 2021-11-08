@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Liste des allocations</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-light bg-dark">
+  <div class="d-flex flex-row ms-2">
+    <div class="col me-3" style="height: 80px">
+      <a class="navbar-brand" href="#">
+        <img th:src="@{/logo.png}" alt="logo CAF" width="150" height="45">
+        <p class="fw-bold text-white">Caisse des Allocations Familiales</p>
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-light" th:href="@{/web}">Home</a>
+    </div>
+  </div>
+</nav>
+<body>
+<h2 class=" ms-4 mt-2 mb-3
+      ">Liste des allocations</h2>
+<div class="col-8 align-items-center">
+  <table class="table table-bordered table-striped mx-4">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Canton</th>
+      <th scope="col">Date de début</th>
+      <th scope="col">Date de fin</th>
+      <th scope="col">Montant</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="allocation : ${allocations}"
+        th:with="myCounter=${counter}">
+      <td th:text="${myCounter.increment(1)}"></td>
+      <td th:text="${allocation.getCanton()}"></td>
+      <td th:text="${allocation.getDebut()}"></td>
+      <td th:text="${allocation.getFin()}"></td>
+      <td th:text="${allocation.getMontant().getValue()}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
