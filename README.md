@@ -11,3 +11,7 @@ git checkout tags/demo2
 ## Provision more VMs
 
 git checkout tags/demo3
+
+## Managed Elastic IP
+
+git checkout tags/demo4
