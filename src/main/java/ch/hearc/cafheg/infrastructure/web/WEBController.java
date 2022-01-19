@@ -8,6 +8,8 @@ import ch.hearc.cafheg.business.allocations.AllocationService;
 import ch.hearc.cafheg.business.allocations.SituationFamille;
 import ch.hearc.cafheg.infrastructure.persistance.AllocataireMapper;
 import ch.hearc.cafheg.infrastructure.persistance.AllocationMapper;
+import java.net.Inet4Address;
+import java.net.UnknownHostException;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+// Tests ?
 @Controller
 public class WEBController {
 
@@ -29,17 +32,25 @@ public class WEBController {
     allocationService = new AllocationService(allocataireMapper, allocationMapper);
   }
 
+
+  @GetMapping("/")
+  public ModelAndView root() throws UnknownHostException {
+    return index();
+  }
+
   @GetMapping("/web")
-  public ModelAndView index() {
+  public ModelAndView index() throws UnknownHostException {
     ModelAndView mav = new ModelAndView("index");
+    mav.addObject("ipAddress", Inet4Address.getLocalHost().getHostAddress());
     return mav;
   }
 
   @GetMapping("/web/allocataires")
-  public ModelAndView allocataires() {
+  public ModelAndView allocataires() throws UnknownHostException {
     ModelAndView mav = new ModelAndView("allocataires");
     mav.addObject("allocataires",
         inTransaction(() -> allocationService.findAllAllocataires("")));
+    mav.addObject("ipAddress", Inet4Address.getLocalHost().getHostAddress());
     mav.addObject("counter", new Counter());
     return mav;
   }
@@ -55,9 +66,10 @@ public class WEBController {
 
   @GetMapping("/web/manage")
   public ModelAndView manageAllocataire(@RequestParam String noAVS,
-      @RequestParam(required = false) String error) {
+      @RequestParam(required = false) String error) throws UnknownHostException {
     ModelAndView mav = new ModelAndView(("manage"));
     Allocataire allocataire = inTransaction(() -> allocationService.findAllocataireByNoAVS(noAVS));
+    mav.addObject("ipAddress", Inet4Address.getLocalHost().getHostAddress());
     mav.addObject("allocataire", allocataire);
     mav.addObject("error", error);
     return mav;
