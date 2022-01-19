@@ -49,6 +49,7 @@ resource "exoscale_ssh_key" "arnaudgeiser" {
 
 # Create a compute instance
 resource "exoscale_compute_instance" "cafheg" {
+  count              = 3
   zone               = "ch-gva-2"
   name               = "cafheg"
   type               = "standard.medium"
