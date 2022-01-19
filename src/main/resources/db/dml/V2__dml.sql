@@ -1,3 +1,9 @@
+DELETE FROM ALLOCATIONS_NAISSANCE;
+DELETE FROM ALLOCATIONS_ENFANTS;
+DELETE FROM ENFANTS;
+DELETE FROM ALLOCATIONS;
+DELETE FROM ALLOCATAIRES;
+
 INSERT INTO ALLOCATAIRES
 VALUES (1, '756.1558.5343.97', 'Kendrick', 'Deguzman');
 INSERT INTO ALLOCATAIRES
@@ -1899,596 +1905,596 @@ INSERT INTO ALLOCATIONS_NAISSANCE
 VALUES (300, 300, 1100);
 
 INSERT INTO VERSEMENTS
-VALUES (1, 1, parsedatetime('10-01-2019', 'dd-MM-yyyy'), parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (1, 1, str_to_date('10-01-2019', '%d-%m-%Y'), str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (2, 1, parsedatetime('10-02-2019', 'dd-MM-yyyy'), parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (2, 1, str_to_date('10-02-2019', '%d-%m-%Y'), str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (3, 1, parsedatetime('10-03-2019', 'dd-MM-yyyy'), parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (3, 1, str_to_date('10-03-2019', '%d-%m-%Y'), str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (4, 1, parsedatetime('10-04-2019', 'dd-MM-yyyy'), parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (4, 1, str_to_date('10-04-2019', '%d-%m-%Y'), str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (5, 1, parsedatetime('10-05-2019', 'dd-MM-yyyy'), parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (5, 1, str_to_date('10-05-2019', '%d-%m-%Y'), str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (6, 1, parsedatetime('10-06-2019', 'dd-MM-yyyy'), parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (6, 1, str_to_date('10-06-2019', '%d-%m-%Y'), str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (7, 1, parsedatetime('10-07-2019', 'dd-MM-yyyy'), parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (7, 1, str_to_date('10-07-2019', '%d-%m-%Y'), str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (8, 1, parsedatetime('10-08-2019', 'dd-MM-yyyy'), parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (8, 1, str_to_date('10-08-2019', '%d-%m-%Y'), str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (9, 1, parsedatetime('10-09-2019', 'dd-MM-yyyy'), parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (9, 1, str_to_date('10-09-2019', '%d-%m-%Y'), str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (10, 1, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (10, 1, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (11, 2, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (11, 2, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (12, 2, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (12, 2, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (13, 2, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (13, 2, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (14, 2, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (14, 2, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (15, 2, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (15, 2, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (16, 2, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (16, 2, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (17, 2, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (17, 2, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (18, 2, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (18, 2, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (19, 2, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (19, 2, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (20, 2, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (20, 2, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (21, 3, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (21, 3, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (22, 3, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (22, 3, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (23, 3, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (23, 3, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (24, 3, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (24, 3, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (25, 3, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (25, 3, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (26, 3, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (26, 3, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (27, 3, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (27, 3, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (28, 3, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (28, 3, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (29, 3, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (29, 3, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (30, 3, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (30, 3, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (31, 4, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (31, 4, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (32, 4, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (32, 4, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (33, 4, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (33, 4, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (34, 4, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (34, 4, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (35, 4, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (35, 4, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (36, 4, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (36, 4, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (37, 4, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (37, 4, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (38, 4, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (38, 4, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (39, 4, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (39, 4, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (40, 4, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (40, 4, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (41, 5, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (41, 5, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (42, 5, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (42, 5, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (43, 5, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (43, 5, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (44, 5, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (44, 5, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (45, 5, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (45, 5, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (46, 5, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (46, 5, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (47, 5, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (47, 5, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (48, 5, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (48, 5, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (49, 5, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (49, 5, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (50, 5, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (50, 5, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (51, 6, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (51, 6, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (52, 6, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (52, 6, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (53, 6, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (53, 6, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (54, 6, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (54, 6, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (55, 6, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (55, 6, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (56, 6, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (56, 6, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (57, 6, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (57, 6, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (58, 6, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (58, 6, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (59, 6, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (59, 6, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (60, 6, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (60, 6, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (61, 7, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (61, 7, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (62, 7, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (62, 7, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (63, 7, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (63, 7, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (64, 7, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (64, 7, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (65, 7, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (65, 7, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (66, 7, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (66, 7, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (67, 7, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (67, 7, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (68, 7, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (68, 7, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (69, 7, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (69, 7, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (70, 7, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (70, 7, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (71, 8, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (71, 8, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (72, 8, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (72, 8, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (73, 8, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (73, 8, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (74, 8, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (74, 8, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (75, 8, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (75, 8, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (76, 8, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (76, 8, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (77, 8, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (77, 8, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (78, 8, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (78, 8, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (79, 8, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (79, 8, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (80, 8, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (80, 8, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (81, 9, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (81, 9, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (82, 9, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (82, 9, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (83, 9, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (83, 9, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (84, 9, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (84, 9, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (85, 9, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (85, 9, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (86, 9, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (86, 9, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (87, 9, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (87, 9, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (88, 9, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (88, 9, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (89, 9, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (89, 9, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (90, 9, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (90, 9, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (91, 10, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (91, 10, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (92, 10, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (92, 10, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (93, 10, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (93, 10, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (94, 10, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (94, 10, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (95, 10, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (95, 10, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (96, 10, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (96, 10, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (97, 10, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (97, 10, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (98, 10, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (98, 10, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (99, 10, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (99, 10, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (100, 10, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (100, 10, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (101, 11, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (101, 11, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (102, 11, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (102, 11, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (103, 11, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (103, 11, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (104, 11, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (104, 11, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (105, 11, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (105, 11, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (106, 11, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (106, 11, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (107, 11, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (107, 11, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (108, 11, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (108, 11, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (109, 11, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (109, 11, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (110, 11, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (110, 11, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (111, 12, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (111, 12, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (112, 12, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (112, 12, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (113, 12, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (113, 12, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (114, 12, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (114, 12, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (115, 12, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (115, 12, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (116, 12, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (116, 12, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (117, 12, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (117, 12, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (118, 12, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (118, 12, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (119, 12, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (119, 12, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (120, 12, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (120, 12, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (121, 13, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (121, 13, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (122, 13, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (122, 13, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (123, 13, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (123, 13, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (124, 13, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (124, 13, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (125, 13, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (125, 13, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (126, 13, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (126, 13, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (127, 13, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (127, 13, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (128, 13, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (128, 13, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (129, 13, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (129, 13, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (130, 13, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (130, 13, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (131, 14, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (131, 14, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (132, 14, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (132, 14, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (133, 14, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (133, 14, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (134, 14, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (134, 14, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (135, 14, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (135, 14, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (136, 14, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (136, 14, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (137, 14, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (137, 14, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (138, 14, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (138, 14, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (139, 14, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (139, 14, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (140, 14, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (140, 14, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (141, 15, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (141, 15, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (142, 15, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (142, 15, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (143, 15, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (143, 15, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (144, 15, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (144, 15, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (145, 15, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (145, 15, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (146, 15, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (146, 15, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (147, 15, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (147, 15, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (148, 15, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (148, 15, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (149, 15, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (149, 15, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (150, 15, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (150, 15, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (151, 16, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (151, 16, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (152, 16, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (152, 16, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (153, 16, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (153, 16, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (154, 16, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (154, 16, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (155, 16, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (155, 16, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (156, 16, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (156, 16, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (157, 16, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (157, 16, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (158, 16, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (158, 16, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (159, 16, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (159, 16, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (160, 16, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (160, 16, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (161, 17, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (161, 17, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (162, 17, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (162, 17, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (163, 17, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (163, 17, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (164, 17, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (164, 17, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (165, 17, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (165, 17, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (166, 17, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (166, 17, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (167, 17, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (167, 17, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (168, 17, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (168, 17, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (169, 17, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (169, 17, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (170, 17, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (170, 17, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (171, 18, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (171, 18, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (172, 18, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (172, 18, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (173, 18, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (173, 18, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (174, 18, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (174, 18, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (175, 18, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (175, 18, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (176, 18, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (176, 18, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (177, 18, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (177, 18, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (178, 18, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (178, 18, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (179, 18, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (179, 18, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (180, 18, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (180, 18, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (181, 19, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (181, 19, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (182, 19, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (182, 19, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (183, 19, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (183, 19, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (184, 19, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (184, 19, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (185, 19, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (185, 19, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (186, 19, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (186, 19, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (187, 19, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (187, 19, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (188, 19, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (188, 19, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (189, 19, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (189, 19, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (190, 19, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (190, 19, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (191, 20, parsedatetime('10-01-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-01-2019', 'dd-MM-yyyy'));
+VALUES (191, 20, str_to_date('10-01-2019', '%d-%m-%Y'),
+        str_to_date('01-01-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (192, 20, parsedatetime('10-02-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-02-2019', 'dd-MM-yyyy'));
+VALUES (192, 20, str_to_date('10-02-2019', '%d-%m-%Y'),
+        str_to_date('01-02-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (193, 20, parsedatetime('10-03-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-03-2019', 'dd-MM-yyyy'));
+VALUES (193, 20, str_to_date('10-03-2019', '%d-%m-%Y'),
+        str_to_date('01-03-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (194, 20, parsedatetime('10-04-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-04-2019', 'dd-MM-yyyy'));
+VALUES (194, 20, str_to_date('10-04-2019', '%d-%m-%Y'),
+        str_to_date('01-04-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (195, 20, parsedatetime('10-05-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-05-2019', 'dd-MM-yyyy'));
+VALUES (195, 20, str_to_date('10-05-2019', '%d-%m-%Y'),
+        str_to_date('01-05-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (196, 20, parsedatetime('10-06-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-06-2019', 'dd-MM-yyyy'));
+VALUES (196, 20, str_to_date('10-06-2019', '%d-%m-%Y'),
+        str_to_date('01-06-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (197, 20, parsedatetime('10-07-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-07-2019', 'dd-MM-yyyy'));
+VALUES (197, 20, str_to_date('10-07-2019', '%d-%m-%Y'),
+        str_to_date('01-07-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (198, 20, parsedatetime('10-08-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-08-2019', 'dd-MM-yyyy'));
+VALUES (198, 20, str_to_date('10-08-2019', '%d-%m-%Y'),
+        str_to_date('01-08-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (199, 20, parsedatetime('10-09-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-09-2019', 'dd-MM-yyyy'));
+VALUES (199, 20, str_to_date('10-09-2019', '%d-%m-%Y'),
+        str_to_date('01-09-2019', '%d-%m-%Y'));
 INSERT INTO VERSEMENTS
-VALUES (200, 20, parsedatetime('10-10-2019', 'dd-MM-yyyy'),
-        parsedatetime('01-10-2019', 'dd-MM-yyyy'));
+VALUES (200, 20, str_to_date('10-10-2019', '%d-%m-%Y'),
+        str_to_date('01-10-2019', '%d-%m-%Y'));
 
 INSERT INTO VERSEMENTS_ALLOCATIONS
 VALUES (1, 1, 262);

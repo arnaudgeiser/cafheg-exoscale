@@ -70,9 +70,11 @@ public class Database {
   public static synchronized void start() {
     logger.debug("Initializing datasource");
     HikariConfig config = new HikariConfig();
-    config.setJdbcUrl("jdbc:h2:mem:sample");
+    //config.setJdbcUrl("jdbc:h2:mem:sample");
+    config.setJdbcUrl("jdbc:mariadb://194.182.162.45:3306/mydb?user=user&password=password");
     config.setMaximumPoolSize(20);
-    config.setDriverClassName("org.h2.Driver");
+    //config.setDriverClassName("org.h2.Driver");
+    config.setDriverClassName("org.mariadb.jdbc.Driver");
     dataSource = new HikariDataSource(config);
     logger.debug("Datasource initialized");
   }
