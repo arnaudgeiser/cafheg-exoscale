@@ -5,3 +5,5 @@ target/
 *.log
 .gitsecret/keys/random_seed
 secrets/setenv.sh
+terraform/**.tfstate
+terraform/.terraform
