@@ -7,3 +7,4 @@ target/
 secrets/setenv.sh
 terraform/**.tfstate
 terraform/.terraform
+terraform/**.backup

@@ -58,6 +58,30 @@ resource "exoscale_compute_instance" "cafheg" {
     data.exoscale_security_group.default.id
   ]
   ssh_key            = exoscale_ssh_key.arnaudgeiser.name
+  user_data          = <<EOF
+#cloud-config
+package_update: true
+packages:
+  - openjdk-11-jre-headless
+  
+write_files:
+  - path: /etc/systemd/system/cafheg.service
+    content: |
+      [Unit]
+      Description=CAF-Heg Service
+      
+      [Service]
+      ExecStart=java -jar /opt/cafheg.jar
+      
+      [Install]
+      WantedBy=multi-user.target
+
+runcmd:
+  - [wget, "http://sos-ch-gva-2.exo.io/heg-demo/cafheg.jar", -O, "/opt/cafheg.jar"]
+  - [chmod, 700, /opt/cafheg.jar]
+  - [systemctl, enable, cafheg]
+  - [systemctl, start, cafheg]
+EOF
 }
 
 
